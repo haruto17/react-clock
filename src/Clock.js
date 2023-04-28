@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect ,useState} from "react";
 
 function Clock() {
+    
+    const [msg, setMsg] = useState("");
 
-    const time = new Date();
-    const hour = time.getHours();
-    const minute = time.getMinutes();
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const time = new Date();
+            const hour = time.getHours();
+            const minute = time.getMinutes();
+            setMsg(`${hour} : ${minute}`);
+        },500);
+        return () => {
+            clearInterval(interval);
+        };
+    },[]);
 
     return (
         <div>
-            <p>{hour} : {minute}</p>
+            <p>{msg}</p>
         </div>
     )
 }
