@@ -1,3 +1,4 @@
+import './Clock.css'
 import React, { useEffect ,useState} from "react";
 
 function Clock() {
@@ -9,7 +10,7 @@ function Clock() {
             const time = new Date();
             const hour = time.getHours();
             const minute = time.getMinutes();
-            setMsg(`${hour} : ${minute}`);
+            setMsg(`${hour}:${minute}`);
         },500);
         return () => {
             clearInterval(interval);
@@ -17,7 +18,7 @@ function Clock() {
     },[]);
 
     return (
-        <div>
+        <div className="Clock">
             <p>{msg}</p>
         </div>
     )

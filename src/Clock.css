@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.Clock {
+    font-size: 100px;
+    font-family: 'Roboto Mono', monospace;
+}
