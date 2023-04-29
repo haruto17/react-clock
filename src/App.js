@@ -4,9 +4,11 @@ import Clock from './Clock';
 
 function App() {
   return (
-    <div className="App">
-      <Clock/>
-    </div>
+    <body>
+      <div className="App">
+        <Clock/>
+      </div>
+    </body>
   );
 }
 
