@@ -4,12 +4,14 @@ import React, { useEffect ,useState} from "react";
 function Clock() {
     
     const [date,setDate] = useState("");
+    const [dow, setdow] = useState("");
     const [time, setTime] = useState("");
 
     useEffect(() => {
         const interval = setInterval(() => {
             const now = new Date();
             const year = now.getFullYear();
+            const dayofweek = now.getDay();
             let month = String(now.getMonth() + 1);
             let day = String(now.getDate());
             const hour = now.getHours();
@@ -23,6 +25,7 @@ function Clock() {
             }
 
             setDate(`${year}/${month}/${day}`);
+            setdow(["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][dayofweek])
             setTime(`${hour}:${minute}`);
         },500);
         return () => {
@@ -34,6 +37,9 @@ function Clock() {
         <div className="Clock">
             <div className='Date'>
                 <p>{date}</p>
+            </div>
+            <div className='DayOfWeek'>
+                <p>{dow}</p>
             </div>
             <div className='Time'>
                 <p>{time}</p>
