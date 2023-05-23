@@ -14,14 +14,21 @@ function Clock() {
             const dayofweek = now.getDay();
             let month = String(now.getMonth() + 1);
             let day = String(now.getDate());
-            const hour = now.getHours();
-            const minute = now.getMinutes();
+            let hour = String(now.getHours());
+            let minute = String(now.getMinutes());
 
-            // 月と日が一桁だったら0を先頭に追加する
+            // 桁が一桁だったら0を先頭に追加する
             if(month.length === 1) {
                 month = "0" + month;
-            } else if (day.length === 1) {
+            } 
+            if (day.length === 1) {
                 day = "0" + day;
+            }
+            if(hour.length === 1) {
+                hour = "0" + hour;
+            }
+            if (minute.length === 1) {
+                minute = "0" + minute;
             }
 
             setDate(`${year}/${month}/${day}`);
