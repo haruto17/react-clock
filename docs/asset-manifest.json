@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-clock/static/css/main.e13630a0.css",
+    "main.js": "/react-clock/static/js/main.7cb8b451.js",
+    "static/js/787.c4b2805e.chunk.js": "/react-clock/static/js/787.c4b2805e.chunk.js",
+    "index.html": "/react-clock/index.html",
+    "main.e13630a0.css.map": "/react-clock/static/css/main.e13630a0.css.map",
+    "main.7cb8b451.js.map": "/react-clock/static/js/main.7cb8b451.js.map",
+    "787.c4b2805e.chunk.js.map": "/react-clock/static/js/787.c4b2805e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e13630a0.css",
+    "static/js/main.7cb8b451.js"
+  ]
+}
