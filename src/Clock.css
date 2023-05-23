@@ -5,6 +5,10 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+.DayOfWeek{
+    font-size: 40px;
+}
+
 .Date {
     font-size: 60px;
 }
